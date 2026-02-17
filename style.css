@@ -35,9 +35,9 @@ button {
 #logo{
     width: 110px;
 }
-main{
+/* main{
 
-}
+} */
 #appelarea{
     padding: 40px 0px;
 }
@@ -62,12 +62,13 @@ p{
 label{
     color: var(--c5);
     font-size: 14px;
-
 }
 input::placeholder, textarea::placeholder{
     color: var(--c1);
     font-size: 16px;
 }
+
+
 input, select, textarea, button{
     margin: 5px 0px 20px;
     width: 100%;
@@ -80,6 +81,7 @@ input, select, textarea, button{
     outline: none;
     box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
 }
+
 select{
     appearance: none;
     -webkit-appearance: none;
@@ -89,6 +91,11 @@ select{
     background-position: right 24px center;
     padding-right: 48px;
     background-color: var(--c5);
+}
+option {
+    background-color: var(--c5);
+    color: var(--c1);          
+    font-weight: bold;                  
 }
 
 button{
