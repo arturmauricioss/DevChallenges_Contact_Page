@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="This is a Front-end Challenge from DevChallenged">
 <body>
     <nav>
         <img src="./assets/Logo.svg" alt="logotipo da Becv" id="logo">
@@ -17,10 +19,10 @@
         <div id="formarea">    
             <form action="" method="get">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Ethan Johnson">
+                <input type="text" id="name" name="name" placeholder="Ethan Johnson" required>
                 
                 <label for="company_email">Company Email</label>
-                <input type="email" id="email" name="email" placeholder="ethan@johson.com">
+                <input type="email" id="email" name="email" placeholder="ethan@johson.com" required>
                 
                 <label for="company_size">Company Size</label>
                 <select name="company_size" id="company_size">
@@ -37,7 +39,7 @@
                 </select>
                 
                 <label for="message">Message</label>
-                <textarea name="message" id="message" rows="8">50-100 employees</textarea>
+                <textarea name="message" id="message" rows="8" required placeholder="50-100 employees"></textarea>
                 <button>Contact Sales</button>
             </form>
         </div>

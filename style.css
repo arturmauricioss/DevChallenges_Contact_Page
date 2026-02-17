@@ -18,6 +18,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 10px;
+    width: 100%;
+    min-width: 150px;
 }
 body,
 input,
@@ -40,7 +42,7 @@ main{
     padding: 40px 0px;
 }
 h1{
-    font-size:clamp(40px,2.3vw + 30px, 64px);
+    font-size: clamp(18px, calc(28px + 36 * ((100vw - 320px) / 880)), 64px);
     color: var(--c5);
     text-align: center;
 }
@@ -50,17 +52,19 @@ p{
     color: var(--c5);
 }
 #formarea{
-    margin: 20px 0px 60px;
+    margin: 20px 0px 70px;
     background-color: var(--c6);
     border-radius: 16px;
     padding: 20px 12px;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+    width: 100%;
 }
 label{
     color: var(--c5);
     font-size: 14px;
 
 }
-input::placeholder{
+input::placeholder, textarea::placeholder{
     color: var(--c1);
     font-size: 16px;
 }
@@ -73,6 +77,18 @@ input, select, textarea, button{
     font-size: 16px;
     color: var(--c1);
     font-weight: bold;
+    outline: none;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.15);
+}
+select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(./assets/Expand_down.svg);
+    background-repeat: no-repeat;
+    background-position: right 24px center;
+    padding-right: 48px;
+    background-color: var(--c5);
 }
 
 button{
