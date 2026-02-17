@@ -6,6 +6,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 <body>
-    <img src="./assets/Logo.svg" alt="">
+    <nav>
+        <img src="./assets/Logo.svg" alt="logotipo da Becv" id="logo">
+    </nav>
+    <main>
+        <div id="appelarea">
+            <h1>Interested in our business pricing?</h1>
+            <p>Fill out the form to view details and we’ll contact you as soon as possible.</p>
+        </div>
+        <div id="formarea">    
+            <form action="" method="get">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Ethan Johnson">
+                
+                <label for="company_email">Company Email</label>
+                <input type="email" id="email" name="email" placeholder="ethan@johson.com">
+                
+                <label for="company_size">Company Size</label>
+                <select name="company_size" id="company_size">
+                    <option value="small">1-50 employees</option>
+                    <option value="medium" selected>50-100 employees</option>
+                    <option value="large">101+ employees</option>
+                </select>
+                
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject">
+                    <option value="contribuiting">Contribuiting to Open Source</option>
+                    <option value="landing" selected>Building Landing Pages</option>
+                    <option value="linux">Support for Linux Distributions</option>
+                </select>
+                
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="50-100 employees">
+                </textarea>
+                <button>Contact Sales</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
