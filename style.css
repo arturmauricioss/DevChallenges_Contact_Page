@@ -15,7 +15,7 @@
 }
 
 body{
-    background-image: linear-gradient(135deg,var(--c3), var(--c2));
+    background-image: linear-gradient(120deg,var(--c3),var(--c2)160%);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 10px;
@@ -113,5 +113,28 @@ button{
 @media (min-width:800px){
     h2{
         font-size: 28px;
+    }
+    nav{
+        margin-left: 6vw;
+    }
+    #formarea{
+        padding: 30px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .row_group {
+        display: flex;
+        flex-direction: row;
+        gap: 24px; 
+        width: 100%;
+    }
+
+    .input_group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
     }
 }
