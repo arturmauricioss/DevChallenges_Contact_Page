@@ -15,7 +15,7 @@
 }
 
 body{
-    background-image: url(./assets/background.svg);
+    background-image: linear-gradient(135deg,var(--c3), var(--c2));
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 10px;
@@ -36,21 +36,27 @@ button {
 #logo{
     width: 110px;
 }
-/* main{
-
-} */
+main{
+    max-width: 800px;
+    justify-content: center;
+    margin: auto;
+}
 #appelarea{
     padding: 40px 0px;
+    margin: auto;
+    max-width: 600px;
 }
 h1{
     font-size: clamp(18px, calc(28px + 36 * ((100vw - 320px) / 880)), 64px);
     color: var(--c5);
     text-align: center;
 }
-p{
+h2{
     margin-top: 20px;
     text-align: center;
     color: var(--c5);
+    font-weight: 300;
+    font-size: 16px;
 }
 #formarea{
     margin: 20px 0px 70px;
@@ -103,4 +109,9 @@ button{
     color: var(--c2);
     font-size: 20px;
     margin: 0px;
+}
+@media (min-width:800px){
+    h2{
+        font-size: 28px;
+    }
 }
